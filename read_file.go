@@ -5,16 +5,11 @@ import (
 	"io"
 	"log"
 	"os"
-	"path/filepath"
 )
 
-func ReadFileAsSlice(file string) (FileLine, FileByte) {
-	absFilePath, err := filepath.Abs(file)
-	if err != nil {
-		log.Panicln(err)
-	}
+func ReadFileAsSlice(filePath string) (FileLine, FileByte) {
 
-	f, err := os.OpenFile(absFilePath, os.O_RDWR, 0666)
+	f, err := os.OpenFile(filePath, os.O_RDWR, 0666)
 	if err != nil {
 		log.Panicln(err)
 	}

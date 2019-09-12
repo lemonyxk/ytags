@@ -5,6 +5,7 @@ import (
 	"fmt"
 	"log"
 	"os"
+	"path/filepath"
 	"strings"
 )
 
@@ -14,25 +15,44 @@ func init() {
 }
 
 func main() {
-	
+
 	_ = flag.Bool("x", false, "fixed the rule")
 	tags := flag.String("t", "", "tags")
 	file := flag.String("f", "", "file")
-	
+
 	flag.Parse()
-	
+
 	var tagsSlice = strings.Split(fmt.Sprintf("%s", *tags), ",")
 	var filePath = fmt.Sprintf("%s", *file)
-	
+
+	absFilePath, err := filepath.Abs(filePath)
+	if err != nil {
+		println(err)
+		return
+	}
+
+	f, err := os.Stat(absFilePath)
+	if os.IsNotExist(err) {
+		println(absFilePath, "not exists")
+		return
+	}
+
+	if f.IsDir() {
+		println(absFilePath, "is a dir")
+		return
+	}
+
+	println(absFilePath)
+
 	GoFmt(filePath)
-	
+
 	var fileLine, fileByte = ReadFileAsSlice(filePath)
-	
+
 	var changeObjectSlice = Search(fileLine, fileByte)
-	
+
 	Change(filePath, changeObjectSlice, fileLine, fileByte, tagsSlice)
-	
+
 	GoFmt(filePath)
-	
+
 	println("tags rebuild success")
 }
