@@ -2,7 +2,6 @@ package main
 
 import (
 	"flag"
-	"fmt"
 	"log"
 	"os"
 	"path/filepath"
@@ -22,8 +21,8 @@ func main() {
 
 	flag.Parse()
 
-	var tagsSlice = strings.Split(fmt.Sprintf("%s", *tags), ",")
-	var filePath = fmt.Sprintf("%s", *file)
+	var tagsSlice = strings.Split(*tags, ",")
+	var filePath = *file
 
 	absFilePath, err := filepath.Abs(filePath)
 	if err != nil {

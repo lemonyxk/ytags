@@ -16,12 +16,12 @@ package main
 
 type Person struct {
 	Person1
-	NameAddr string `json:"NameAddr" bson:"NameAddr"`
-	Job      string `json:"Job" bson:"Job"`
-	Age      int64  `json:"Age" bson:"Age"`
+	NameAddr string `json:"NameAddr" bson:"NameAddr" mapstructure:"NameAddr" form:"NameAddr"`
+	Job      string `json:"Job" bson:"Job" mapstructure:"Job" form:"Job"`
+	Age      int64  `json:"Age" bson:"Age" mapstructure:"Age" form:"Age"`
 }
 type Person1 struct {
-	NNNNameAAAddr string `json:"NNNNameAAAddr" bson:"NNNNameAAAddr"`
-	Job           string `json:"Job" bson:"Job"`
-	Age           int64  `json:"Age" bson:"Age"`
+	NNNNameAAAddr string `json:"NNNNameAAAddr" bson:"NNNNameAAAddr" mapstructure:"NNNNameAAAddr" form:"NNNNameAAAddr"`
+	Job           string `json:"Job" bson:"Job" mapstructure:"Job" form:"Job"`
+	Age           int64  `json:"Age" bson:"Age" mapstructure:"Age" form:"Age"`
 }
