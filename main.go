@@ -42,17 +42,7 @@ func main() {
 		return
 	}
 
-	println(absFilePath)
-
-	GoFmt(filePath)
-
-	var fileLine, fileByte = ReadFileAsSlice(filePath)
-
-	var changeObjectSlice = Search(fileLine, fileByte)
-
-	Change(filePath, changeObjectSlice, fileLine, fileByte, tagsSlice)
-
-	GoFmt(filePath)
+	Do(absFilePath, tagsSlice)
 
 	println("tags rebuild success")
 }

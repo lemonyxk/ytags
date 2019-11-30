@@ -1,31 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="93639297-ad04-4deb-8dc4-21922d1b268d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="13940911-a599-450a-8833-444c7e0627f9" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/lemo.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/lemo.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/go.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/change.go" beforeDir="false" afterPath="$PROJECT_DIR$/change.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gofmt.go" beforeDir="false" afterPath="$PROJECT_DIR$/gofmt.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/change.go" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/read_file.go" beforeDir="false" afterPath="$PROJECT_DIR$/read_file.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/read_file.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/seach.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/structs.go" beforeDir="false" afterPath="$PROJECT_DIR$/structs.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.text" beforeDir="false" afterPath="$PROJECT_DIR$/test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ytags" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="CodeStyleSettingsInfer">
-    <option name="done" value="true" />
-  </component>
-  <component name="ComposerSettings">
-    <execution>
-      <executable />
-    </execution>
-  </component>
-  <component name="DefaultGradleProjectSettings">
-    <option name="testRunner" value="GRADLE" />
-    <option name="delegatedBuild" value="true" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -34,38 +29,22 @@
       </list>
     </option>
   </component>
-  <component name="GOROOT" path="/usr/local/Cellar/go/1.13/libexec" />
+  <component name="GOROOT" path="/usr/local/Cellar/go/1.13.4/libexec" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GoLibraries">
     <option name="indexEntireGoPath" value="false" />
   </component>
-  <component name="MacroExpansionManager">
-    <option name="directoryName" value="VWPtsDeZ" />
-  </component>
-  <component name="ProjectCodeStyleSettingsMigration">
-    <option name="version" value="1" />
-  </component>
-  <component name="ProjectId" id="1Qd6t4I7HenlhVWjU4mgxGugZTe" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectId" id="1ULKlHCpET8ZyBWDvbmB6mmkRxl" />
   <component name="PropertiesComponent">
     <property name="DefaultGoTemplateProperty" value="Go File" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="go.gopath.indexing.explicitly.defined" value="true" />
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
     <property name="go.tried.to.enable.integration.vgo.integrator" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
-    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
-  </component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
-    </key>
+    <property name="last_opened_file_path" value="$USER_HOME$" />
+    <property name="settings.editor.selected.configurable" value="editing.templates" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -80,36 +59,20 @@
     </option>
   </component>
   <component name="RunManager">
-    <configuration name="go build main.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="go" />
-      <working_directory value="$PROJECT_DIR$/" />
-      <kind value="FILE" />
+    <configuration name="go build test" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="ytags" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
       <filePath value="$PROJECT_DIR$/main.go" />
+      <package value="test" />
+      <directory value="$PROJECT_DIR$/" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Go Build.go build main.go" />
+        <item itemvalue="Go Build.go build test" />
       </list>
     </recent_temporary>
-  </component>
-  <component name="TaskManager">
-    <task active="true" id="Default" summary="Default task">
-      <changelist id="93639297-ad04-4deb-8dc4-21922d1b268d" name="Default Changelist" comment="" />
-      <created>1562686255884</created>
-      <option name="number" value="Default" />
-      <option name="presentableId" value="Default" />
-      <updated>1562686255884</updated>
-      <workItem from="1562686257497" duration="4083000" />
-      <workItem from="1568088338334" duration="99000" />
-      <workItem from="1568088444276" duration="144000" />
-      <workItem from="1568088594721" duration="92000" />
-      <workItem from="1568088694728" duration="42000" />
-      <workItem from="1568088742302" duration="211000" />
-      <workItem from="1568088981248" duration="3875000" />
-      <workItem from="1568262603566" duration="18800000" />
-    </task>
-    <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -119,7 +82,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
