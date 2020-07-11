@@ -1,3 +1,3 @@
-module github.com/Lemo-yxk/ytags
+module github.com/lemoyxk/ytags
 
-go 1.13
+go 1.15
