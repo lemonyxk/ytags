@@ -13,13 +13,17 @@ func init() {
 	log.SetFlags(log.Llongfile | log.Ldate | log.Ltime)
 }
 
+var fix = flag.Bool("x", false, "fixed the rule")
+var tags = flag.String("t", "", "tags")
+var file = flag.String("f", "", "file")
+
 func main() {
 
-	_ = flag.Bool("x", false, "fixed the rule")
-	tags := flag.String("t", "", "tags")
-	file := flag.String("f", "", "file")
-
 	flag.Parse()
+
+	*fix = true
+	*tags = "json,bson,mapstructure,form"
+	*file = "test.go"
 
 	var tagsSlice = strings.Split(*tags, ",")
 	var filePath = *file

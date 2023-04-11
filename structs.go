@@ -31,12 +31,19 @@ func Do(path string, tags []string) {
 
 		for i := 0; i < len(n.Fields.List); i++ {
 
-			if n.Fields.List[i].Tag == nil {
+			// if n.Fields.List[i].Tag == nil {
+			// 	continue
+			// }
+
+			if len(n.Fields.List[i].Names) == 0 {
 				continue
 			}
 
 			var causeKey = n.Fields.List[i].Names[0].Name
 
+			if n.Fields.List[i].Tag == nil {
+				n.Fields.List[i].Tag = &ast.BasicLit{}
+			}
 			n.Fields.List[i].Tag.Value = CreateTags(causeKey, tags)
 		}
 
@@ -76,7 +83,7 @@ func CreateTags(causeKey string, tags []string) string {
 
 	var createTags = "`"
 	for _, v := range tags {
-		createTags += fmt.Sprintf("%s:\"%s\" ", v, causeKey)
+		createTags += fmt.Sprintf("%s:\"%s\" ", v, CauseWord(causeKey))
 	}
 	createTags = createTags[:len(createTags)-1]
 	createTags += "`"
@@ -89,6 +96,9 @@ func IsBigWord(char byte) bool {
 }
 
 func CauseWord(word string) string {
+	if !*fix {
+		return word
+	}
 	var s bytes.Buffer
 	for i, v := range word {
 		if i > 0 && IsBigWord(byte(v)) && ((i+1 < len(word) && !IsBigWord(word[i+1])) || !IsBigWord(word[i-1])) {
