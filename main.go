@@ -21,10 +21,6 @@ func main() {
 
 	flag.Parse()
 
-	*fix = true
-	*tags = "json,bson,mapstructure,form"
-	*file = "test.go"
-
 	var tagsSlice = strings.Split(*tags, ",")
 	var filePath = *file
 
