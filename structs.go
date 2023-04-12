@@ -9,6 +9,7 @@ import (
 	"go/token"
 	"log"
 	"os"
+	"strings"
 )
 
 func Do(path string, tags []string) {
@@ -83,7 +84,19 @@ func CreateTags(causeKey string, tags []string) string {
 
 	var createTags = "`"
 	for _, v := range tags {
-		createTags += fmt.Sprintf("%s:\"%s\" ", v, CauseWord(causeKey))
+		var arr = strings.Split(v, ":")
+		if len(arr) == 0 {
+			continue
+		}
+		var key = arr[0]
+
+		if len(arr) == 2 && arr[1] == "-" {
+			createTags += fmt.Sprintf(`%s:"-" `, key)
+			continue
+		}
+
+		var value = append([]string{CauseWord(causeKey)}, arr[1:]...)
+		createTags += fmt.Sprintf(`%s:"%s" `, key, strings.Join(value, ","))
 	}
 	createTags = createTags[:len(createTags)-1]
 	createTags += "`"
@@ -96,7 +109,7 @@ func IsBigWord(char byte) bool {
 }
 
 func CauseWord(word string) string {
-	if !*fix {
+	if !fix {
 		return word
 	}
 	var s bytes.Buffer

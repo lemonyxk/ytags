@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fc6ea6a2-1058-417c-bc79-490d5a859220" name="Changes" comment="">
+    <list default="true" id="fc6ea6a2-1058-417c-bc79-490d5a859220" name="Changes" comment="1.opt.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/structs.go" beforeDir="false" afterPath="$PROJECT_DIR$/structs.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.go" beforeDir="false" afterPath="$PROJECT_DIR$/test.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
